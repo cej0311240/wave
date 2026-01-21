@@ -1,0 +1,23 @@
+#mqrquee{
+  position: absolute;
+  top: 50%; 
+  left: 0;            
+  z-index: 10;
+  padding-right: 4rem;
+  /* 컨텐츠 사이즈에 맞춰 width재설정 */
+  width: max-content;  
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;    
+    li{
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 4rem;
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 2px 2px 20px #ccc;
+    }
+  }
+}
