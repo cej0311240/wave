@@ -1,6 +1,6 @@
 import "./styles/reset.css";
 import "./styles/fonts.css";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { Routes,Route, HashRouter } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
 import Wave from "./pages/Wave";
 import About from "./pages/About";
@@ -8,7 +8,7 @@ import Summary from "./pages/Summary";
 import Info from "./pages/Info";
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Wave />}/>
@@ -21,7 +21,7 @@ const App = () => {
           </Route>
         </Route>        
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 export default App
